@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Admin Login</h1>
+
+      <div class="inputs">
+        <input id="username" type="text" placeholder="Username" required />
+        <br />
+        <input id="password" type="password" placeholder="Password" required />
+        <br />
+
+        <button id="loginbtn" type="button">Login</button> <br />
+      </div>
+      <div class="greeting">
+        <h1>
+          Hey, &nbsp;<span style="font-size: 60px">&#128075;&nbsp;</span> Admin
+          Good Morning
+        </h1>
+      </div>
+    </div>
+
+    <a href="../index.html">
+      <button class="goHome">Back To Home</button>
+    </a>
+
+    <script src="/JS/login_api.js"></script>
+  </body>
+</html>

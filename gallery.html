@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Gallery</title>
+    <link rel="stylesheet" href="/css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="hck_logo_header" src="/images/hck_ing_group_logo.png" />
+      </a>
+      <button id="toggle_button" onclick="changeFunction()">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div id="header_link">
+        <a class="next_page" href="our_courses.html">OUR COURSES</a>
+        <a class="next_page" href="gallery.html">GALLERY</a>
+        <a class="next_page" href="events.html">EVENTS</a>
+        <a class="next_page" href="admission.html">ADMISSION</a>
+        <a class="next_page" href="contact_us.html">CONTACT US</a>
+      </div>
+
+      <div class="header_separator"></div>
+    </header>
+
+    <!-- From API -->
+    <h1 class="gallery_title head_title">HERALD GALLERY COLLECTION</h1>
+    <div id="all_images"></div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/index_api.js"></script>
+    <footer class="footer">
+      <h4 class="copyright">© Herald College Kathmandu.</h4>
+
+      <div class="social_media">
+        <a
+          class="social"
+          href="https://www.facebook.com/heraldcollegektm/"
+          target="_blank"
+        >
+          <img
+            class="facebook"
+            src="/images/facebook_logo.png"
+            alt=""
+            width="80px"
+          />
+        </a>
+        <a
+          class="social"
+          href="https://www.instagram.com/heraldcollegektm/?hl=en"
+          target="_blank"
+        >
+          <img
+            class="linkedin"
+            src="/images/linkedin_logo.png"
+            alt=""
+            width="70px"
+          />
+        </a>
+        <a
+          class="social"
+          href="https://np.linkedin.com/school/herald-college-kathmandu/"
+          target="_blank"
+        >
+          <img
+            class="insta"
+            src="/images/instagram_logo.png"
+            alt=""
+            width="50px"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

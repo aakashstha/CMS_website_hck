@@ -1,0 +1,325 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+a {
+  text-decoration-line: none;
+}
+.hck_logo_header {
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 270px;
+}
+#toggle_button {
+  display: none;
+  color: rgba(116, 192, 67, 255);
+  background-color: transparent;
+  border: rgba(51, 51, 51, 255);
+  border-radius: 10px;
+}
+.fa.fa-bars {
+  font-size: 35px;
+}
+
+#header_link {
+  display: inline;
+  float: right;
+  margin: 55px 60px 0 0;
+}
+
+.next_page {
+  font-size: 20px;
+  color: rgba(51, 51, 51, 255);
+  text-decoration: none;
+  margin: 20px;
+}
+
+.next_page:hover {
+  color: whitesmoke;
+  background-color: rgba(116, 192, 67, 255);
+}
+
+.header_separator {
+  padding: 2px;
+  background-color: rgba(51, 51, 51, 255);
+}
+/* Up to Header Section*/
+
+.partnership {
+  width: 49%;
+  margin: 40px auto;
+}
+
+.uni_logo {
+  float: left;
+  width: 280px;
+  margin-top: 10px;
+}
+
+.handshake {
+  float: left;
+  width: 120px;
+  margin: 50px 20px 0 5px;
+}
+
+.college_logo {
+  float: left;
+  width: 280px;
+}
+/* Upto handshake Section*/
+
+.cover_container {
+  margin: 0 10px;
+}
+.cover {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(
+    0 10%,
+    5% 0,
+    95% 0,
+    100% 10%,
+    100% 95%,
+    95% 100%,
+    5% 100%,
+    0% 95%,
+    0% 10%
+  );
+}
+
+.cover_image {
+  object-fit: cover;
+  width: 100%;
+  height: 520px;
+}
+
+#courses_available {
+  margin: 60px auto;
+  width: 50%;
+}
+
+.course_title {
+  color: rgba(51, 51, 51, 255);
+  border-bottom: 4px solid rgba(51, 51, 51, 255);
+  text-align: center;
+  margin: 60px auto;
+  width: 50%;
+}
+.method_title,
+.completion_title {
+  color: rgba(51, 51, 51, 255);
+  border-bottom: 4px solid rgba(51, 51, 51, 255);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.method_title {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+.completion_title {
+  margin-left: 5%;
+  margin-right: 5.5%;
+}
+
+.course {
+  background-color: rgba(116, 192, 67, 255);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course_name {
+  color: rgba(51, 51, 51, 255);
+  font-size: 80px;
+  margin: 0;
+  padding: 20px 0px;
+}
+
+.sub_course_name {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 25px 0px;
+  background-color: rgba(51, 51, 51, 255);
+  font-size: 20px;
+  margin: 0;
+}
+/* Up to All Courses */
+
+/* main_title is used in coure_title */
+.methology {
+  margin: 0 60px;
+}
+.methology_images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  width: 30%;
+}
+
+.image_subtitle {
+  width: 30%;
+  text-align: justify;
+}
+
+.all_image_subtitles {
+  display: flex;
+  justify-content: space-around;
+}
+/* Up to Methology */
+
+/* completion_title is used in coure_title */
+
+.onCompleted {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.first_achievement,
+.second_achievement {
+  display: flex;
+  justify-content: center;
+}
+
+.achievement_title {
+  width: 70%;
+}
+
+.achievement_one,
+.achievement_two {
+  margin: 10px;
+  font-size: 18px;
+  color: whitesmoke;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 150px;
+}
+.achievement_one {
+  background-color: rgba(116, 192, 67, 255);
+}
+.achievement_two {
+  background-color: rgba(51, 51, 51, 255);
+}
+
+/* Icons on the After Complition */
+.fa.fa-graduation-cap,
+.material-icons.md-48,
+.fa.fa-certificate,
+.fa.fa-users {
+  font-size: 110px;
+}
+/* Up to On Completed */
+
+/* Footer Section */
+.footer {
+  color: whitesmoke;
+  padding: 5px;
+  background-color: rgba(51, 51, 51, 255);
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+.social_media {
+  margin-right: 65px;
+}
+
+.social {
+  float: inline-start;
+}
+.facebook {
+  margin-top: 5px;
+}
+.twitter {
+  margin-right: 10px;
+}
+.linkedin {
+  margin-right: 15px;
+}
+.insta {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .handshake {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin: 50px 0 50px 5px;
+  }
+  .header {
+    position: relative;
+  }
+  .college_logo {
+    float: left;
+    width: 280px;
+    margin-bottom: 50px;
+  }
+  #header_link {
+    margin-left: 0;
+    display: none;
+    float: none;
+    margin: 0;
+  }
+  #header_link a {
+    display: block;
+  }
+  #toggle_button {
+    display: inline;
+    float: right;
+    margin: 30px 10px 0 0;
+  }
+  #toggle_button:hover {
+    color: rgba(51, 51, 51, 255);
+  }
+
+  /* .methology_images {
+        display: inline;
+    }
+    .image {
+        display: block;
+        width: 40%;
+    }
+    .all_image_subtitles {
+        display: inline;
+    } */
+
+  .first_achievement,
+  .second_achievement {
+    display: block;
+  }
+  .achievement_one,
+  .achievement_two {
+    padding: 30px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+  }
+
+  .footer {
+    display: block;
+    padding-bottom: 70px;
+  }
+  .social_media {
+    margin-left: 55px;
+  }
+}

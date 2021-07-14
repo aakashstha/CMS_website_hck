@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="/css/admin/main_admin_panel.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Courses</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="dashboard">
+      <h1 class="a">ADMIN DASHBOARD</h1>
+      <p>Control Panel</p>
+    </header>
+    <a class="preview" href="../our_courses.html" target="_blank"
+      >Preview Courses</a
+    >
+
+    <!-- Admin Section to perform CRUD operation -->
+    <div class="all_courses">
+      <div class="admin_navigation_link">
+        <a class="next_page" href="course_panel.html">COURSES</a>
+        <a class="next_page" href="event_panel.html">EVENTS</a>
+        <a class="next_page" href="gallery_panel.html">GALLERY</a>
+      </div>
+
+      <div>
+        <h1 class="course_title">ALL COURSES</h1>
+        <div id="all_courses_available"></div>
+      </div>
+
+      <!-- Courses Maintenance -->
+      <div class="CRUD">
+        <div class="crud_course">
+          <h2 class="crud_title">Add Course</h2>
+          <label>Course Id</label> <br />
+          <input type="text" id="course_id" /><br />
+          <label>Course Name</label> <br />
+          <input type="text" id="course_name" /><br />
+          <label>Course Full Form</label> <br />
+          <input type="text" id="course_full_form" /><br />
+
+          <div class="option">
+            <label>Availability:</label> <br />
+            <input type="radio" name="select" value="1" />
+            <label>Available</label><br />
+            <input type="radio" name="select" value="0" />
+            <label>Comming Soon</label><br />
+          </div>
+
+          <div class="add_buttons">
+            <button
+              class="adding_button"
+              type="submit"
+              value="submit"
+              onclick="postCourses()"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+
+        <hr />
+        <div class="crud_course">
+          <h2 class="crud_title">Update Course</h2>
+          <label>Course Id</label> <br />
+          <input type="text" id="u_course_id" /><br />
+          <label>Course Name</label> <br />
+          <input type="text" id="u_course_name" /><br />
+          <label>Course Full Form</label> <br />
+          <input type="text" id="u_course_full_form" /><br />
+
+          <div class="option">
+            <label>Availability:</label> <br />
+            <input type="radio" name="select_u" value="1" />
+            <label>Available</label><br />
+            <input type="radio" name="select_u" value="0" />
+            <label>Comming Soon</label><br />
+          </div>
+
+          <div class="add_buttons">
+            <button
+              class="adding_button"
+              type="submit"
+              value="submit"
+              onclick="updateCourses()"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+
+        <hr />
+        <div class="crud_course">
+          <h2 class="crud_title">Delete Course</h2>
+          <label>Course Id</label> <br />
+          <input type="text" id="d_course_id" /><br />
+
+          <div class="add_buttons">
+            <button
+              class="adding_button"
+              type="submit"
+              value="submit"
+              onclick="deleteCourses()"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <a class="logout" href="login.html">Log out</a>
+      </div>
+    </div>
+
+    <script src="/JS/admin_api.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="hck_logo_header" src="/images/hck_ing_group_logo.png" />
+      </a>
+      <button id="toggle_button" onclick="changeFunction()">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div id="header_link">
+        <a class="next_page" href="our_courses.html">OUR COURSES</a>
+        <a class="next_page" href="gallery.html">GALLERY</a>
+        <a class="next_page" href="events.html">EVENTS</a>
+        <a class="next_page" href="admission.html">ADMISSION</a>
+        <a class="next_page" href="contact_us.html">CONTACT US</a>
+      </div>
+
+      <div class="header_separator"></div>
+    </header>
+
+    <div class="partnership">
+      <a href="https://www.wlv.ac.uk/" target="_blank">
+        <img class="uni_logo" src="/images/wlv_uni_logo.png" alt="" srcset="" />
+      </a>
+
+      <img class="handshake" src="/images/handshake.png" alt="" />
+
+      <a href="index.html" target="_self">
+        <img
+          class="college_logo"
+          src="/images/hck_ing_group_logo.png"
+          alt=""
+          srcset=""
+        />
+      </a>
+    </div>
+
+    <div class="cover_container">
+      <div class="cover">
+        <img class="cover_image" src="/images/cover_img1.jpeg" alt="" />
+        <img class="cover_image" src="/images/cover_img2.jpg" alt="" />
+        <img class="cover_image" src="/images/cover_img3.jpeg" alt="" />
+        <img class="cover_image" src="/images/cover_img4.jpg" alt="" />
+        <img class="cover_image" src="/images/cover_img5.jpg" alt="" />
+        <img class="cover_image" src="/images/cover_img6.jpeg" alt="" />
+      </div>
+    </div>
+
+    <!-- From API -->
+    <h1 class="course_title">OUR COURSES</h1>
+    <div id="courses_available"></div>
+
+    <div class="methology">
+      <h1 class="method_title">OUR METHOLOGY</h1>
+
+      <div class="methology_images">
+        <img class="image" src="/images/lecture.jpg" alt="" />
+        <img class="image" src="/images/tutorial.jpg" alt="" />
+        <img class="image" src="/images/workshop.jpg" alt="" />
+      </div>
+
+      <div class="all_image_subtitles">
+        <div class="image_subtitle">
+          <h2>Lecture</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+            quibusdam qui asperiores earum! Quam omnis dicta non et iste
+            inventore, aperiam, placeat reprehenderit, perspiciatis quos
+            doloremque! Quasi vitae corporis rerum?
+          </p>
+        </div>
+        <div class="image_subtitle">
+          <h2>Tutorial</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem voluptates officia laboriosam impedit quasi quis vero
+            delectus, asperiores dolor perspiciatis ipsa dignissimos expedita,
+            aperiam molestias soluta. Aliquam debitis ut consectetur?
+          </p>
+        </div>
+        <div class="image_subtitle">
+          <h2>Workshop</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias,
+            esse neque. Quasi porro animi est omnis asperiores cum aliquid culpa
+            necessitatibus, non tempora laudantium. Culpa veniam dolorum maxime!
+            Voluptate, quae!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="onCompleted">
+      <h1 class="completion_title">AFTER COMPLETION</h1>
+
+      <div class="first_achievement">
+        <div class="achievement_one">
+          <div class="achievement_title">
+            <h3>ACADEMIC PRESTIGE</h3>
+            <p>
+              Teaching facilities and infrastructure meet the international
+              standards set by the university partner.
+            </p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+        </div>
+        <div class="achievement_two">
+          <div class="achievement_title">
+            <h3>RECOGNITION</h3>
+            <p>
+              We are direct partners of a prestigious UK University, with
+              international faculties and guest lecturers.
+            </p>
+          </div>
+          <div class="icon">
+            <i class="material-icons md-48">book</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="second_achievement">
+        <div class="achievement_two">
+          <div class="achievement_title">
+            <h3>EXPERIENCED FACULTY</h3>
+            <p>
+              All teaching faculties are approved by the relevant awarding
+              bodies (i.e., University of Wolverhampton)
+            </p>
+          </div>
+
+          <div class="icon">
+            <i class="fa fa-users"></i>
+          </div>
+        </div>
+        <div class="achievement_one">
+          <div class="achievement_title">
+            <h3>CERTIFICATION</h3>
+            <p>
+              Upon successful completion of the course, the student shall
+              receive Bachelor degree certificate from theUniversity of
+              Wolverhampton.
+            </p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-certificate"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/index_api.js"></script>
+    <footer class="footer">
+      <h4 class="copyright">© Herald College Kathmandu.</h4>
+
+      <div class="social_media">
+        <a
+          class="social"
+          href="https://www.facebook.com/heraldcollegektm/"
+          target="_blank"
+        >
+          <img
+            class="facebook"
+            src="/images/facebook_logo.png"
+            alt=""
+            width="80px"
+          />
+        </a>
+        <a
+          class="social"
+          href="https://www.instagram.com/heraldcollegektm/?hl=en"
+          target="_blank"
+        >
+          <img
+            class="linkedin"
+            src="/images/linkedin_logo.png"
+            alt=""
+            width="70px"
+          />
+        </a>
+        <a
+          class="social"
+          href="https://np.linkedin.com/school/herald-college-kathmandu/"
+          target="_blank"
+        >
+          <img
+            class="insta"
+            src="/images/instagram_logo.png"
+            alt=""
+            width="50px"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

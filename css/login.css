@@ -1,0 +1,104 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: powderblue;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 20px 20px 310px 20px;
+  margin: 40px 80px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+input {
+  color: rgb(0, 0, 0);
+  background-color: rgb(221, 218, 218);
+  padding: 15px 230px 15px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+
+#loginbtn {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 201, 84);
+  padding: 15px 165px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.forgot {
+  background-color: whitesmoke;
+  margin-left: 80px;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+}
+
+.inputs {
+  display: inline;
+  float: left;
+}
+
+.greeting {
+  display: inline-block;
+  margin-top: 85px;
+  margin-left: 90px;
+}
+a {
+  text-decoration-line: none;
+}
+.goHome {
+  background-color: rgb(48, 201, 84);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  border: none;
+  font-size: 12px;
+}
+
+/* Responsive Start from Here */
+@media screen and (max-width: 900px) {
+  .greeting {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .container {
+    background-color: whitesmoke;
+    padding: 20px 20px 0px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  input {
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 218, 218);
+    padding: 15px 100px 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+  }
+  .login {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 201, 84);
+    padding: 15px 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+  }
+}
