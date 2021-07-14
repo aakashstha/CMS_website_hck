@@ -1,6 +1,6 @@
 // For Login Admin
 
-var hostName = "https://cms-heraldcollege.vercel.app/";
+var hostName = "https://cms-api-heraldcollege.vercel.app/";
 
 async function login() {
   let email = document.getElementById("username").value;

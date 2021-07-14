@@ -1,5 +1,5 @@
 // This section is for home page in our website and for visitors
-var hostName = "https://cms-heraldcollege.vercel.app/";
+var hostName = "https://cms-api-heraldcollege.vercel.app/";
 async function runGet(urlName) {
   const url = `${hostName}${urlName}`;
 
