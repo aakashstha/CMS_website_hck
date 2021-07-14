@@ -1,6 +1,7 @@
 // This section is for home page in our website and for visitors
+var hostName = "https://cms-heraldcollege.vercel.app/";
 async function runGet(urlName) {
-  const url = `http://127.0.0.1:3000/${urlName}`;
+  const url = `${hostName}${urlName}`;
 
   try {
     const res = await axios.get(url);

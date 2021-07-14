@@ -1,6 +1,7 @@
 // This section is for Admin Panel control
+var hostName = "https://cms-heraldcollege.vercel.app/";
 async function runGet(urlName) {
-  const url = `http://127.0.0.1:3000/${urlName}`;
+  const url = `${hostName}${urlName}`;
 
   try {
     const res = await axios.get(url);
@@ -64,7 +65,7 @@ async function postCourses() {
   };
 
   try {
-    let res = await axios.post("http://127.0.0.1:3000/courses", course);
+    let res = await axios.post(`${hostName}courses`, course);
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -91,10 +92,7 @@ async function updateCourses() {
   };
 
   try {
-    let res = await axios.put(
-      "http://127.0.0.1:3000/courses/" + course_id + "/",
-      course
-    );
+    let res = await axios.put(`${hostName}courses/` + course_id + "/", course);
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -106,9 +104,7 @@ async function deleteCourses() {
   let course_id = document.getElementById("d_course_id").value;
 
   try {
-    let res = await axios.delete(
-      "http://127.0.0.1:3000/courses/" + course_id + "/"
-    );
+    let res = await axios.delete(`${hostName}courses/` + course_id + "/");
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -176,7 +172,7 @@ async function postEvents() {
   };
 
   try {
-    let res = await axios.post("http://127.0.0.1:3000/events", event);
+    let res = await axios.post(`${hostName}events`, event);
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -197,10 +193,7 @@ async function updateEvents() {
   };
 
   try {
-    let res = await axios.put(
-      "http://127.0.0.1:3000/events/" + event_id + "/",
-      event
-    );
+    let res = await axios.put(`${hostName}events/` + event_id + "/", event);
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -212,9 +205,7 @@ async function deletEvents() {
   let event_id = document.getElementById("d_event_id").value;
 
   try {
-    let res = await axios.delete(
-      "http://127.0.0.1:3000/events/" + event_id + "/"
-    );
+    let res = await axios.delete(`${hostName}events` + event_id + "/");
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -263,7 +254,7 @@ async function postImage() {
   formdata.append("imageId", image_id);
   formdata.append("imagePath", file);
   try {
-    const res = await axios.post("http://127.0.0.1:3000/gallery", formdata);
+    const res = await axios.post(`${hostName}gallery`, formdata);
     console.log(res);
   } catch (error) {
     console.log(error);
@@ -281,7 +272,7 @@ async function updateImage() {
   formdata.append("imagePath", file);
   try {
     const res = await axios.put(
-      "http://127.0.0.1:3000/gallery/" + image_id + "/",
+      `${hostName}gallery` + image_id + "/",
       formdata
     );
     console.log(res);
@@ -295,9 +286,7 @@ async function deletImage() {
   let image_id = document.getElementById("d_image_id").value;
 
   try {
-    const res = await axios.delete(
-      "http://127.0.0.1:3000/gallery/" + image_id + "/"
-    );
+    const res = await axios.delete(`${hostName}gallery` + image_id + "/");
     console.log(res);
   } catch (error) {
     console.log(error);
