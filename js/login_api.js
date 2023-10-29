@@ -5,7 +5,7 @@ var hostName = "https://cms-api-heraldcollege.vercel.app/";
 async function login() {
   let email = document.getElementById("username").value;
   let password = document.getElementById("password").value;
-
+  
   const login = {
     email: email,
     password: password,
